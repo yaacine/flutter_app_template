@@ -1,0 +1,42 @@
+apiVersion: backstage.io/v1alpha1
+kind: Template
+metadata:
+  # unique name per namespace for the template
+  name: flutter-app-template
+  # title of the template
+  title: Flutter App Template
+  # a description of the template
+  description:
+    Flutter application skeleton for creating mobile crossplateform applications.
+  # some tags to display in the frontend
+  tags:
+    - recommended
+    - flutter
+spec:
+  # which templater key to use in the templaters builder
+  templater: cookiecutter
+  # what does this template create
+  type: mobile application
+  # if the template is not in the current directory where this definition is kept then specify
+  path: './template'
+  # the schema for the form which is displayed in the frontend.
+  # should follow JSON schema for forms: https://jsonforms.io/
+  schema:
+    required:
+      - component_id
+      - description
+      - google_maps
+    properties:
+      component_id:
+        title: Name
+        type: string
+        description: Unique name of the component
+      description:
+        title: Description
+        type: string
+        description: Description of the component
+      google_maps:
+        title: Uses Google Maps
+        type: boolean
+        description: Description of the component
+        
