@@ -6,8 +6,7 @@ metadata:
   # title of the template
   title: Flutter App Template
   # a description of the template
-  description:
-    Flutter application skeleton for creating mobile crossplateform applications.
+  description: Flutter application skeleton for creating mobile crossplateform applications.
   # some tags to display in the frontend
   tags:
     - recommended
@@ -18,14 +17,17 @@ spec:
   # what does this template create
   type: mobile application
   # if the template is not in the current directory where this definition is kept then specify
-  path: './template'
+  path: "./template"
   # the schema for the form which is displayed in the frontend.
   # should follow JSON schema for forms: https://jsonforms.io/
   schema:
     required:
       - component_id
       - description
-      - google_maps
+
+    optional:
+      - google_maps_apikey
+      - google_maps_flutter
     properties:
       component_id:
         title: Name
@@ -35,8 +37,11 @@ spec:
         title: Description
         type: string
         description: Description of the component
-      google_maps:
-        title: Uses Google Maps
-        type: boolean
+      google_maps_apikey:
+        title: Google Maps API Key (optional)
+        type: string
         description: Description of the component
-        
+      google_maps_flutter:
+        title: Google Maps dependency version
+        type: string
+        description: Description of the component
