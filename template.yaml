@@ -17,14 +17,13 @@ spec:
   # what does this template create
   type: mobile application
   # if the template is not in the current directory where this definition is kept then specify
-  path: "./template"
+  # path: "./template"
   # the schema for the form which is displayed in the frontend.
   # should follow JSON schema for forms: https://jsonforms.io/
   schema:
     required:
       - component_id
       - description
-
     optional:
       - google_maps_apikey
       - google_maps_flutter
