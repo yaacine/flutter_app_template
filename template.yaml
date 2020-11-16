@@ -39,8 +39,10 @@ spec:
       google_maps_apikey:
         title: Google Maps API Key (optional)
         type: string
+        default: ""
         description: Specify it in case you want this app to use Google maps packege
       google_maps_flutter:
         title: Google Maps package version (optional)
         type: string
         description: Specify it in case you want this app to use Google maps packege
+        default: ""
