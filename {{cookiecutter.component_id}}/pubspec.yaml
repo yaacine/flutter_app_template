@@ -1,4 +1,4 @@
-name: flutter_app_template
+name: {{cookiecutter.component_id}}
 description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to

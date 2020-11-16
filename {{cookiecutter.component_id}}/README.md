@@ -1,4 +1,4 @@
-# flutter_app_template
+# {{cookiecutter.component_id}}
 
 A new Flutter project.
 
