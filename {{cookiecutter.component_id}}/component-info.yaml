@@ -3,10 +3,14 @@ kind: Component
 metadata:
   name: {{cookiecutter.component_id }}
   description: {{cookiecutter.description }}
+  tags:
+    - flutter
+    - ios
+    - android
   annotations:
     github.com/project-slug: {{cookiecutter.storePath }}
     backstage.io/techdocs-ref: github:https://github.com/{{cookiecutter.storePath}}
 spec:
-  type: mobileapp
+  type: website
   lifecycle: experimental
   owner: {{cookiecutter.owner }}
