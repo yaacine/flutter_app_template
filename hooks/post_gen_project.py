@@ -11,8 +11,7 @@ def remove_tailwind_folder():
 # ...
 
 def main():
-    if "{{cookiecutter.css_framework}}".lower() != "tailwindcss":
-        remove_tailwind_folder()
+    remove_tailwind_folder()
 
 if __name__ == "__main__":
     main()
