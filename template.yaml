@@ -27,6 +27,7 @@ spec:
     optional:
       - google_maps_apikey
       - google_maps_flutter
+      - license
     properties:
       component_id:
         title: Name
@@ -45,4 +46,9 @@ spec:
         title: Google Maps package version (optional)
         type: string
         description: Specify it in case you want this app to use Google maps packege
+        default: ""
+      license:
+        title: License (optional)
+        type: string
+        description: "Specify the license MIT, Apache, ... "
         default: ""
