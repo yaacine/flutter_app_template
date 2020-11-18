@@ -4,6 +4,14 @@ void main() {
   runApp(MyApp());
 }
 
+{%- if cookiecutter.license == "MIT" -%}
+# Possible license content here
+
+{%- elif cookiecutter.license == "BSD-3" -%}
+# More possible license content here
+
+{% endif %}
+
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
