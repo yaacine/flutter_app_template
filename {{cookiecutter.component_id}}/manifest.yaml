@@ -1,0 +1,16 @@
+features:
+  - name: google_maps
+    enabled: {{cookiecutter.google_maps|lower}}
+    resources:
+      - path/to/file/Feature1a.txt
+      - path/to/file/Feature1b.txt
+
+  - name: payement
+    enabled: {{cookiecutter.payement|lower}}
+    resources:
+      - lib/providers/payment_provider.dart
+
+  - name: chat
+    enabled: {{cookiecutter.chat|lower}}
+    resources:
+      - lib/providers/chat_provider.dart
