@@ -2,7 +2,7 @@ features:
   - name: google_maps
     enabled: {{cookiecutter.google_maps|lower}}
     resources:
-      - path/to/file/Feature1a.txt
+      - lib/providers/location_provider.dart
       - path/to/file/Feature1b.txt
 
   - name: payement
