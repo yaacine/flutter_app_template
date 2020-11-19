@@ -3,7 +3,7 @@ features:
     enabled: {{cookiecutter.google_maps|lower}}
     resources:
       - lib/providers/location_provider.dart
-      - path/to/file/Feature1b.txt
+      - lib/models/locaiton.dart
 
   - name: payement
     enabled: {{cookiecutter.payement|lower}}
