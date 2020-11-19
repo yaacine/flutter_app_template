@@ -59,7 +59,7 @@ spec:
       
       google_maps:
         title: Use Google Maps
-        type: string
+        type: boolean
         description: "check this if you want to use google maps in this project "
         default: false
       
