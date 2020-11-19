@@ -28,6 +28,10 @@ spec:
       - google_maps_apikey
       - google_maps_flutter
       - license
+      - google_maps
+      - payement
+      - chat
+
     properties:
       component_id:
         title: Name
@@ -52,3 +56,22 @@ spec:
         type: string
         description: "Specify the license MIT, Apache, ... "
         default: ""
+      
+      google_maps:
+        title: Use Google Maps
+        type: string
+        description: "check this if you want to use google maps in this project "
+        default: false
+      
+      payement:
+        title: Use Payement
+        type: boolean
+        description: "check this if you want to use payement in this project "
+        default: false
+      
+      chat:
+        title: Use Chat
+        type: boolean
+        description: "check this if you want to use chat in this project "
+        default: false
+      
