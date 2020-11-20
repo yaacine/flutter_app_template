@@ -24,7 +24,7 @@ dependencies:
   flutter:
     sdk: flutter
     {%- if cookiecutter.google_maps|lower == true -%}
-    {{cookiecutter.google_maps_flutter}
+    {{cookiecutter.google_maps_flutter}}
     {% endif %}
     
   
