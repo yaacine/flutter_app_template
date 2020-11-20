@@ -9,6 +9,7 @@ features:
     enabled: {{cookiecutter.payement|lower}}
     resources:
       - lib/providers/payment_provider.dart
+      - lib/providers/payment_details.dart
 
   - name: chat
     enabled: {{cookiecutter.chat|lower}}
