@@ -15,7 +15,7 @@ spec:
   # which templater key to use in the templaters builder
   templater: cookiecutter
   # what does this template create
-  type: mobile application
+  type: mobile_application
   # if the template is not in the current directory where this definition is kept then specify
   path: "."
   # the schema for the form which is displayed in the frontend.

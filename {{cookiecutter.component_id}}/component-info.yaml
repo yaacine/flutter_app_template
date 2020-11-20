@@ -11,6 +11,6 @@ metadata:
     github.com/project-slug: {{cookiecutter.storePath }}
     backstage.io/techdocs-ref: github:https://github.com/{{cookiecutter.storePath}}
 spec:
-  type: mobile_app
+  type: other
   lifecycle: experimental
   owner: {{cookiecutter.owner}}
