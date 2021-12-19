@@ -1,0 +1,77 @@
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  # unique name per namespace for the template
+  name: flutter-app-template
+  # title of the template
+  title: Flutter App Template
+  # a description of the template
+  description: Flutter application skeleton for creating mobile crossplateform applications.
+  # some tags to display in the frontend
+  tags:
+    - recommended
+    - flutter
+spec:
+  # which templater key to use in the templaters builder
+  templater: cookiecutter
+  # what does this template create
+  type: mobile_application
+  # if the template is not in the current directory where this definition is kept then specify
+  path: "."
+  # the schema for the form which is displayed in the frontend.
+  # should follow JSON schema for forms: https://jsonforms.io/
+  schema:
+    required:
+      - component_id
+      - description
+    optional:
+      - google_maps_apikey
+      - google_maps_flutter
+      - license
+      - google_maps
+      - payement
+      - chat
+
+    properties:
+      component_id:
+        title: Name
+        type: string
+        description: Unique name of the component
+      description:
+        title: Description
+        type: string
+        description: Description of the component
+      google_maps_apikey:
+        title: Google Maps API Key (optional)
+        type: string
+        default: ""
+        description: Specify it in case you want this app to use Google maps packege
+      google_maps_flutter:
+        title: Google Maps package version (optional)
+        type: string
+        description: Specify it in case you want this app to use Google maps packege
+        default: ""
+      license:
+        title: License (optional)
+        type: string
+        description: "Specify the license MIT, Apache, ... "
+        default: ""
+      
+      google_maps:
+        title: Use Google Maps
+        type: boolean
+        description: "check this if you want to use google maps in this project "
+        default: false
+      
+      payement:
+        title: Use Payement
+        type: boolean
+        description: "check this if you want to use payement in this project "
+        default: false
+      
+      chat:
+        title: Use Chat
+        type: boolean
+        description: "check this if you want to use chat in this project "
+        default: false
+      
