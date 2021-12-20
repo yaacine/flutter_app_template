@@ -63,7 +63,7 @@ spec:
       name: Fetch Docs
       action: fetch:plain
       input:
-        targetPath: ./skelton
+        targetPath: ./
         url: https://github.com/yaacine/flutter_app_template
 
     - id: publish
