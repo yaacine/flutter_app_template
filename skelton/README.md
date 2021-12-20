@@ -1,4 +1,4 @@
-# ${{cookiecutter.component_id}}
+# ${{parameters.component_id}}
 
 A new Flutter project.
 
