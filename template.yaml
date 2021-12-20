@@ -63,8 +63,8 @@ spec:
       name: Fetch Docs
       action: fetch:plain
       input:
-        targetPath: ./community
-        url: https://github.com/backstage/community/tree/main/backstage-community-sessions
+        targetPath: ./skelton
+        url: https://github.com/yaacine/flutter_app_template
 
     - id: publish
       name: Publish
