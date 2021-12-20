@@ -51,20 +51,14 @@ spec:
     - id: fetch-base
       name: Fetch Base
       action: fetch:template
-      
       input:
         cookiecutterCompat: true
-        url: ./template
+        url: ./skelton
         values:
-          name: ${{ parameters.name }}
+          component_id: ${{ parameters.component_id }}
+          description: ${{ parameters.description }}
+          destination: ${{ parameters.repoUrl | parseRepoUrl }}
           owner: ${{ parameters.owner }}
-
-    - id: fetch-docs
-      name: Fetch Docs
-      action: fetch:plain
-      input:
-        targetPath: ./
-        url: https://github.com/yaacine/flutter_app_template
 
     - id: publish
       name: Publish
