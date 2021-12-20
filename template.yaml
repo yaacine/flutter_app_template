@@ -15,17 +15,22 @@ spec:
 
   # these are the steps which are rendered in the frontend with the form input
   parameters:
-    - title: Fill in some steps
+    - title: Provide some simple information
       required:
-        - name
+        - component_id
+        - owner
+
       properties:
-        name:
+        component_id:
           title: Name
           type: string
           description: Unique name of the component
-          ui:autofocus: true
-          ui:options:
-            rows: 5
+    
+        description:
+          title: Description
+          type: string
+          description: Help others understand what this website is for.
+          
         owner:
           title: Owner
           type: string
